@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('user_id');
-            $table->decimal('amount', 8, 2);
+            $table->decimal('amount', 13, 2);
             $table->string('description')->nullable();
             $table->boolean('is_recurrent')->default(false);
             $table->date('expense_date');

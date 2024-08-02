@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('revenues', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->decimal('amount', 8, 2);
+            $table->decimal('amount', 13, 2);
             $table->string('description')->nullable();
             $table->boolean('is_recurrent')->default(false);
             $table->date('revenue_date');
